@@ -1,1 +1,48 @@
-<!doctype html><title>初生的月光</title>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="初生的月光——一个可拖动翻开的三维立体书首页。">
+  <title>初生的月光 · 第一页</title>
+  <style>
+    :root{color-scheme:dark;--ink:#f7f0df;--muted:#b9b1a2;--gold:#d9b875;--night:#090b13;--open:0}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;overflow:hidden}
+    body{font-family:"Songti SC","Noto Serif SC",Georgia,serif;color:var(--ink);background:radial-gradient(circle at 68% 28%,#30354f 0,#171a2b 27%,#0b0d16 58%,#06070c 100%)}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff 0.65px,transparent .75px);background-size:37px 37px;opacity:.17;mask-image:linear-gradient(to bottom,#000,transparent 76%)}
+    .wrap{min-height:100vh;display:grid;grid-template-columns:minmax(290px,43%) 1fr;align-items:center;gap:3vw;padding:7vh 7vw}
+    .copy{z-index:3;max-width:520px}.eyebrow{font:600 11px/1.4 ui-sans-serif,system-ui;letter-spacing:.32em;color:var(--gold);margin-bottom:28px}.copy h1{font-size:clamp(52px,7vw,104px);font-weight:400;line-height:.98;letter-spacing:.04em;margin:0 0 24px;text-shadow:0 8px 35px #000}.lead{font-size:clamp(16px,1.5vw,22px);color:var(--muted);letter-spacing:.12em;margin:0 0 54px}.chapter{font:600 11px/1.4 ui-sans-serif,system-ui;letter-spacing:.25em;color:var(--gold);margin-bottom:12px}.quote{font-size:clamp(18px,2vw,28px);margin:0 0 38px}.play{border:1px solid #d9b87588;border-radius:99px;background:#d9b87512;color:var(--ink);padding:15px 24px;font:500 14px/1 ui-sans-serif,system-ui;letter-spacing:.08em;cursor:pointer;backdrop-filter:blur(8px);transition:.25s}.play:hover{background:#d9b87525;transform:translateY(-2px)}
+    .stage{position:relative;height:min(74vh,690px);display:grid;place-items:center;perspective:1500px;user-select:none;touch-action:none}.moon{position:absolute;width:min(34vw,430px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 33%,#fff9de,#dfe4d9 40%,#8d92a1 74%,#484d61);filter:drop-shadow(0 0 42px #d7ddff55);opacity:.7}.moon:after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 63% 27%,#5d62752c 0 8%,transparent 9%),radial-gradient(circle at 35% 60%,#555b6a22 0 11%,transparent 12%)}
+    .book{position:relative;width:min(42vw,520px);height:min(29vw,360px);transform-style:preserve-3d;transform:rotateX(61deg) rotateZ(-19deg) translateY(5%);filter:drop-shadow(0 38px 28px #000b)}.base,.page{position:absolute;inset:0;border-radius:8px 18px 18px 8px;transform-origin:left center;transform-style:preserve-3d}.base{background:linear-gradient(135deg,#1a1320,#34233e);box-shadow:inset 0 0 0 3px #c7a56b55,0 0 0 5px #140f17}.pages{position:absolute;inset:7px 8px 7px 7px;border-radius:5px 15px 15px 5px;background:repeating-linear-gradient(to bottom,#eee7d5 0 2px,#d0c7b5 3px 4px);transform:translateZ(8px)}.page{inset:9px 10px 9px 9px;background:linear-gradient(105deg,#e6ddc7,#fffaf0 57%,#c9bca4);transform:translateZ(12px) rotateY(calc(var(--open)*-158deg));transition:transform .08s linear;box-shadow:inset -16px 0 30px #85775c38}.page:before{content:"初生的月光";position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(22px,3vw,42px);letter-spacing:.18em;color:#3d3142;transform:rotate(90deg);opacity:calc(1 - var(--open))}.page:after{content:"";position:absolute;inset:0;backface-visibility:hidden;background:linear-gradient(100deg,transparent,#fff8 50%,transparent);mix-blend-mode:screen}.glow{position:absolute;width:38%;height:44%;border-radius:50%;background:#fff7c7;filter:blur(34px);opacity:calc(var(--open)*.55);transform:translate3d(-6%,8%,70px)}
+    .control{position:absolute;left:8%;right:8%;bottom:2%;font:500 11px/1 ui-sans-serif,system-ui;color:#aaa4a0;letter-spacing:.1em}.labels{display:flex;justify-content:space-between;margin-bottom:10px}.range{width:100%;accent-color:var(--gold)}.hint{text-align:center;margin-top:10px;color:#77747a}.reset{position:absolute;right:2%;top:7%;border:0;background:#ffffff0d;color:#c6c0b5;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:19px}
+    @media(max-width:760px){body{overflow:auto}.wrap{grid-template-columns:1fr;padding:8vh 7vw 5vh;gap:2vh}.copy h1{font-size:54px}.lead{margin-bottom:34px}.stage{height:48vh}.book{width:70vw;height:48vw}.moon{width:62vw}.control{bottom:0}}
+    @media(prefers-reduced-motion:reduce){.play{transition:none}.page{transition:none}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="copy">
+      <div class="eyebrow">A LITTLE BEGINNING</div>
+      <h1>初生的月光</h1>
+      <p class="lead">每一个故事，都从轻轻翻开开始。</p>
+      <div class="chapter">01 第一幕 · 初生</div>
+      <p class="quote">把月光，轻轻放进你的梦里。</p>
+      <button class="play" id="play">翻开第一页 ↗</button>
+    </section>
+    <section class="stage" id="scene" aria-label="可以拖动开合的三维立体书">
+      <div class="moon" aria-hidden="true"></div>
+      <div class="book" aria-hidden="true"><div class="base"></div><div class="pages"></div><div class="page"></div><div class="glow"></div></div>
+      <button class="reset" id="reset" aria-label="合上书本">↶</button>
+      <div class="control"><div class="labels"><span>合拢</span><span>展开</span></div><input class="range" id="progress" type="range" min="0" max="100" value="0" aria-label="书本开合进度"><div class="hint">点击翻开，或左右拖动书本</div></div>
+    </section>
+  </main>
+  <script>
+    const root=document.documentElement,range=document.querySelector('#progress'),scene=document.querySelector('#scene');
+    let value=0,dragging=false,startX=0,startValue=0,raf=0;
+    function set(v){value=Math.max(0,Math.min(1,v));root.style.setProperty('--open',value);range.value=Math.round(value*100)}
+    function animate(to){cancelAnimationFrame(raf);const from=value,t0=performance.now();function tick(t){const p=Math.min(1,(t-t0)/850),e=1-Math.pow(1-p,3);set(from+(to-from)*e);if(p<1)raf=requestAnimationFrame(tick)}raf=requestAnimationFrame(tick)}
+    document.querySelector('#play').addEventListener('click',()=>animate(value>.5?0:1));document.querySelector('#reset').addEventListener('click',()=>animate(0));range.addEventListener('input',e=>set(e.target.value/100));
+    scene.addEventListener('pointerdown',e=>{if(e.target.closest('button,input'))return;dragging=true;startX=e.clientX;startValue=value;scene.setPointerCapture(e.pointerId)});scene.addEventListener('pointermove',e=>{if(dragging)set(startValue+(e.clientX-startX)/360)});scene.addEventListener('pointerup',()=>{dragging=false;animate(value>.5?1:0)});scene.addEventListener('pointercancel',()=>dragging=false);set(0);
+  </script>
+</body>
+</html>
